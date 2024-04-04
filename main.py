@@ -19,49 +19,7 @@ class ArrayFillerApp(QMainWindow):
     def __init__(self):
    
         self.setWindowTitle("Array Filler App")
-        self.setGeometry(100, 100, 400, 300)
-        
-        self.rows1_label = QLabel("Количество строк (Массив 1):", self)
-        self.rows1_label.setFont(QFont("Arial", 12))
-        self.rows1_input = QLineEdit(self)
-        
-        self.cols1_label = QLabel("Количество столбцов (Массив 1):", self)
-        self.cols1_label.setFont(QFont("Arial", 12))
-        self.cols1_input = QLineEdit(self)
-        
-        self.rows2_label = QLabel("Количество строк (Массив 2):", self)
-        self.rows2_label.setFont(QFont("Arial", 12))
-        self.rows2_input = QLineEdit(self)
-        
-        self.cols2_label = QLabel("Количество столбцов (Массив 2):", self)
-        self.cols2_label.setFont(QFont("Arial", 12))
-        self.cols2_input = QLineEdit(self)
-        
-        self.fill_button = QPushButton("Заполнить массивы", self)
-        self.fill_button.clicked.connect(self.fill_arrays)
-        self.fill_button.setStyleSheet("background-color: #4CAF50; color: white; font-size: 14px; padding: 10px;")
-        
-        self.add_button = QPushButton("Сложить массивы", self)
-        self.add_button.clicked.connect(self.add_arrays)
-        self.add_button.setStyleSheet("background-color: #ffffff; color: black; font-size: 14px; padding: 10px;")
-        
-        self.multiply_button = QPushButton("Умножить массивы", self)
-        self.multiply_button.clicked.connect(self.multiply_arrays)
-        self.multiply_button.setStyleSheet("background-color: #ffffff; color: black; font-size: 14px; padding: 10px;")
-        
-        self.sort_button = QPushButton("Отсортировать массивы", self)
-        self.sort_button.clicked.connect(self.sort_arrays)
-        self.sort_button.setStyleSheet("background-color: #ffffff; color: black; font-size: 14px; padding: 10px;")
-        
-        self.max_button = QPushButton("Найти максимальный элемент", self)
-        self.max_button.clicked.connect(self.find_max)
-        self.max_button.setStyleSheet("background-color: #ffffff; color: black; font-size: 14px; padding: 10px;")
-        
-        self.output_label = QLabel("Массивы:", self)
-        self.output_label.setFont(QFont("Arial", 12))
-        
-        self.output_text = QTextEdit(self)
-        self.output_text.setReadOnly(True)
+      
         
         layout = QVBoxLayout()
         layout.addWidget(self.rows1_label)
