@@ -17,7 +17,7 @@ from tqdm import tqdm
 
 class ArrayFillerApp(QMainWindow):
     def __init__(self):
-        super().__init__()
+   
         self.setWindowTitle("Array Filler App")
         self.setGeometry(100, 100, 400, 300)
         
